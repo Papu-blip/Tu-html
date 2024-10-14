@@ -205,10 +205,11 @@
             ctx2.putImageData(img2, 0, 0);
         }
 
-      //Cargar modelo
+      
+      // Cargar modelo
       (async () => {
           console.log("Cargando modelo...");
-          modelo = await tf.loadLayersModel("model.json");
+          modelo = await tf.loadLayersModel("https://raw.githubusercontent.com/Papu_blip/Tu-html/main/model.json");
           console.log("Modelo cargado...");
       })();
     </script>
