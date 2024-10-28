@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" sizes="32x32" href="imagenes/hoja.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="imagenes/hoja.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://raw.githubusercontent.com/Papu-blip/Tu-html/main/hoja.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://raw.githubusercontent.com/Papu-blip/Tu-html/main/hoja.png">
     <title>Números</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -86,7 +86,7 @@
     align-items: center;
     padding: 20px;
     background-color: #f0f0f0;
-    background-image: url('imagenes/estrellas.jpg');
+    background-image: url('https://raw.githubusercontent.com/Papu-blip/Tu-html/main/estrellas.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -99,7 +99,7 @@
     
     <main>
       <div>
-        <img class="d-block mx-auto mb-2" src="imagenes/hoja.png" alt="" width="80" height="80">
+        <img class="d-block mx-auto mb-2" src="https://raw.githubusercontent.com/Papu-blip/Tu-html/main/hoja.png" alt="" width="80" height="80">
         <h1 class="display-5 fw-bold">Se podra predecir pero con audios</h1>
         </div>
       </div>
@@ -177,7 +177,7 @@
             
                         
             // Reproducir el audio correspondiente al número predicho
-            var audio = new Audio(`audios/${mayorIndice}.wav`);
+            var audio = new Audio(`https://raw.githubusercontent.com/Papu-blip/Tu-html/main/${mayorIndice}.wav`);
             audio.play().catch(error => {
             console.error('Error al intentar reproducir el audio:', error);
             });
@@ -282,7 +282,7 @@
       //Cargar modelo
       (async () => {
           console.log("Cargando modelo...");
-          modelo = await tf.loadLayersModel("model.json");
+          modelo = await tf.loadLayersModel("https://raw.githubusercontent.com/Papu-blip/Tu-html/main/papu.json");
           console.log("Modelo cargado...");
       })();
     </script>
